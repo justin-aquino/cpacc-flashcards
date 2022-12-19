@@ -1,11 +1,12 @@
-* {
-  background-color: #282c34;
-  color: cornsilk;
-}
+
 
 .App {
   text-align: center;
 }
+h1 {
+  margin: 1%;
+}
+
 
 .App-logo {
   height: 40vmin;

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { useState } from 'react';
 import cpacc from "./utils/cards-api-v1"
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App ">
       <main>
-        <h1>CPACC Exam Flashcards</h1>
+        <h1>A11y Flashcards</h1>
         <CardList cards={cards} setCards={setCards} />
       </main>
     </div>
