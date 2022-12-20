@@ -3,7 +3,7 @@ import './App.css';
 import {Navbar, Nav, NavDropdown, Offcanvas} from "react-bootstrap"
 import { useState } from 'react';
 import cpaccFlashCards from "./utils/cards-api-v1"
-import CardList from './Components/CardList';
+import CpaccList from './Components/CpaccList';
 import { Routes, Route } from 'react-router';
 import Home from './Components/Home';
 
@@ -48,7 +48,7 @@ function App() {
         
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path="/flashcards/cpacc" element={<CardList cpacc={cpacc} setCpacc={setCpacc} />} />
+          <Route path="/flashcards/cpacc" element={<CpaccList cpacc={cpacc} setCpacc={setCpacc} />} />
 
         </Routes>
         
