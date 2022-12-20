@@ -35,28 +35,11 @@ const CardList = ({cards, setCards}) => {
         console.log(showToggle)
     }
 
-    // const mappedCards = cards.map((card, idx) => {
-    //     return <ShowCard card={card} key={idx} />
-    // })
   return (
-    // <>
-    //     <h2>Card List</h2>
-    //     <div className="container">
-    //         <h3>Question:</h3>
-    //         <p> {showQuestion.question}</p>
-    //     </div>
-    //     <div>
-    //         <h3>Answer:</h3>
-    //     {
-    //         showToggle ? <p>{showQuestion.answer}</p> : null
-    //     }
-    // </div>
-    //     <button onClick={showAnswer}>Show Answer</button>
-    //     <button onClick={randomizer}>Generate Question</button>
-    // </>
+
     <>
         <h2>CPACC Practice</h2>
-        <div className="container bg-dark text-white " style={{ width: '40rem' } }>
+        <div className="main-container bg-dark text-white " style={{ width: '40rem' } }>
             <Card className="sub-container bg-secondary" style={{ width: '35rem' } }>
                 <Card.Title><h2>Question:</h2></Card.Title>
                 <Card.Text> <p className="question">{showQuestion.question}</p></Card.Text>
@@ -78,7 +61,12 @@ const CardList = ({cards, setCards}) => {
                 :
                 <Button className="q-btn" variant="danger" onClick={showAnswer}>Show Answer</Button>
                 }
-                <Button className="q-btn" variant="primary" onClick={randomizer}>Generate Question</Button>
+                {
+                    showQuestion.question === "Click Button to Generate Question" ?
+                    <Button className="q-btn" variant="primary" onClick={randomizer}>Generate Question</Button> 
+                    :
+                    <Button className="q-btn" variant="primary" onClick={randomizer}>Next Question</Button>
+                }
             </Card.Body>
             </Card>
         </div>

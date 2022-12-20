@@ -37,7 +37,40 @@ const cpacc = [
         answer: "Economic model. The economic model recognizes the effect of bodily limitations on a person's ability to work, and so there may be a need for economic support and/or accomodations for the person's disability."
     },
     {
-        question: "Match the theoretical model of disability to the scenario: The ALS Ice Bucket Challenge raised millions of dollars for scientific research leading to meaningful breakthroughs in indentifying and treating the disease."
+        question: "Match the theoretical model of disability to the scenario: The ALS Ice Bucket Challenge raised millions of dollars for scientific research leading to meaningful breakthroughs in indentifying and treating the disease.",
+        answer: "Charity Model. The Charity Model can inspire people to contribute their time and/or resources to provide assistance when it is genuinely needed."
+    },
+    {
+        question: "Match the theoretical model of disability to the scenario: In order for a university student to receive an accomodation for more time on tests, she first had to provide documentation of the diagnosis of her disability to the school's disability services office.",
+        answer: "Medical Model. The Medical Model can address the biological sources of disabilities, either by clinically curing them or providing ways to medically manage the conditions. The medical component of disabilities is a critical reality for many people."
+    },
+    {
+        question: "Not knowing which of two digits is larger, i.e. understanding the meaning of numbers, or lacking effective counting strategies, or even the inability to add simple single-digit numbers mentally are characteristics of which disability?",
+        answer: " Dyscalculia. Dyscalculia involves an inability to understand arithmetic and how to calculate. Signs include difficulties grasping the meaning of quantities, understanding that the numeral and the word for a number are the same concept, remembering math facts, counting money or making change, estimating time, judging speed or distance, understandign the logic of math, and difficulty remembering numbers while solving problems."
+    },
+    {
+        question: "Despite having an average IQ, a student struggles to make sense of the words that he reads. He may be considered to have a reading disability called:",
+        answer: "Dyslexia. Dyslexia is associated with a difficulty in learning to read despite normal IQ."
+    },
+    {
+        question: "Someone who is easily distracted by sights and sounds, has trouble paying attention, and is impulsive most likely has:",
+        answer: "Attention Deficit Hyperactivity Disorder. ADHD is a developmental problem characterized by distractability, inattention, hyperactivity, and impulsivity. While people do not outgrow this condition, they do learn to adapt."
+    },
+    {
+        question: "A person who has substantial hearing loss in combination with 20/200 vision, and as a result uses touch as their primary means of communication MOST likely identifies with what category of disability?",
+        answer: "Deaf-Blind. Deaf-blindness is a rare condition in which an individual has combined hearing and vision loss, thus limiting access to both auditory and visual information."
+    },
+    {
+        question: "A student who has difficulty with communication, difficulty with social interactions, obsessive interests, and repetitive behaviors can be characterized as having which cognitive disability?",
+        answer: "Autism Spectrum Disorder. ASD refers to a range of conditions characterized by some degree of impaired social behavior, and communication and language, and a narrow range of interests, and activities that are both unique to the individual and carried out repetitively."
+    },
+    {
+        question: "True or false. All people with auditory disabilities know sign language.",
+        answer: "False. For some people with auditory disabilities, sign language is the primary language, and they may not read the written laguage as fluently. However, it is important to remember that not all poeple with auditory disabilities know sign language."
+    },
+    {
+        question: "Designing a website that does not have blinking, flashing, or flickering content has the MOST benefit for people with what disability?",
+        answer: "Epilepsy. People with epilepsy my have seizures when viewing flashing material on a site. This includes people with photosensitive epilepsy as well as other photosensitive seizure disorders."
     }
     
 ]
