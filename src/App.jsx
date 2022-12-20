@@ -4,6 +4,8 @@ import {Navbar, Nav, NavDropdown, Offcanvas} from "react-bootstrap"
 import { useState } from 'react';
 import cpacc from "./utils/cards-api-v1"
 import CardList from './Components/CardList';
+import { Routes, Route } from 'react-router';
+import Home from './Components/Home';
 
 function App() {
 
@@ -18,13 +20,21 @@ function App() {
       <Navbar bg="dark" variant="dark">
         <div className='m-auto'>
             <Nav>
-              <Navbar.Brand className='a11y-nav' href="#home">A11y Cards</Navbar.Brand>
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <NavDropdown title="Flashcards" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">CPACC Cards</NavDropdown.Item>
+              <Navbar.Brand className='a11y-nav text-white m-2' href="/">A11y Cards</Navbar.Brand>
+              <Nav.Link href="https://www.dhs.gov/trusted-tester" className='text-white m-2'>Trusted Trester</Nav.Link>
+              <Nav.Link href="https://www.w3.org/WAI/WCAG21/quickref/" className='text-white m-2'>WCAG Quick Ref</Nav.Link>
+              <NavDropdown    
+                id="collasible-nav-dropdown" 
+                className='m-2'
+                title={
+                        <span className="text-white my-auto ">
+                          Flashcards
+                        </span>
+                      } 
+              >       
+              <NavDropdown.Item href="/flashcards/cpacc" >CPACC Cards</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                Trusted Tester
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -36,8 +46,13 @@ function App() {
         </div>
 
       </Navbar>
-        <h1>A11y Flashcards</h1>
-        <CardList cards={cards} setCards={setCards} />
+        
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path="/flashcards/cpacc" element={<CardList cards={cards} setCards={setCards} />} />
+
+        </Routes>
+        
       </main>
     </div>
     </>
