@@ -1,11 +1,11 @@
 import "./ShowCard.css"
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card"
+import Button from "react-bootstrap/Button"
 import { useState } from "react"
 
 
-const ShowCard = ({cards, setCards}) => {
-  
+const ShowCard = ({cpacc, setCpacc}) => {
+
   let [showToggle, setShowToggle] = useState(false);
 
   const [showQuestion, setShowQuestion] = useState({
@@ -13,38 +13,61 @@ const ShowCard = ({cards, setCards}) => {
       answer: ""
   })
   
-
-
-
+  
   const randomizer = () => {
-     for (let i = 0; i < cards.length; i++){
-         let qIndex = Math.floor(Math.random() * cards.length)
-         var currentQuestion = cards[qIndex]
-      }
-      setShowQuestion(currentQuestion)
-      setShowToggle(false)
-      console.log(showQuestion)
-  }
+    for (let i = 0; i < cpacc.length; i++){
+        let qIndex = Math.floor(Math.random() * cpacc.length)
+        var currentQuestion = cpacc[qIndex]
+     }
+     setShowQuestion(currentQuestion)
+     setShowToggle(false)
+     console.log(showQuestion)
+ }
 
-  const showAnswer = () => {
-      if(showToggle === true) {
-          setShowToggle(false)
-      } else {
-          setShowToggle(true)
-      }
-      console.log(showToggle)
-  }
+ const showAnswer = () => {
+     if(showToggle === true) {
+         setShowToggle(false)
+     } else {
+         setShowToggle(true)
+     }
+     console.log(showToggle)
+ }
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title className="question">{showQuestion.question}</Card.Title>
-        <Card.Text className="answer">
-          {showQuestion.answer}
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <>
+       <h1>CPACC Practice</h1>
+        <div className="main-container bg-dark text-white " style={{ width: '40rem' } }>
+            <Card className="sub-container bg-secondary" style={{ width: '35rem' } }>
+                <Card.Title><h2>Question:</h2></Card.Title>
+                <Card.Text  className="question"> {showQuestion.question} </Card.Text>
+            <Card.Body className=" text-white">
+                {
+                  showToggle ? 
+                  <>
+                    <Card.Title><h2>Answer:</h2></Card.Title>
+                    <Card.Text className="p-0 answer">
+                     {showQuestion.answer}
+                    </Card.Text>
+                  </>
+                    
+                    : null
+                }
+                
+                {
+                    showToggle ?
+                <Button className="q-btn" variant="danger" onClick={showAnswer}>Hide Answer</Button>
+                :
+                <Button className="q-btn" variant="danger" onClick={showAnswer}>Show Answer</Button>
+                }
+                {
+                    showQuestion.question === "Click Button to Generate Question" ?
+                    <Button className="q-btn" variant="primary" onClick={randomizer}>Generate Question</Button> 
+                    :
+                    <Button className="q-btn" variant="primary" onClick={randomizer}>Next Question</Button>
+                }
+            </Card.Body>
+            </Card>
+        </div>
+    </>
   )
 }
 
