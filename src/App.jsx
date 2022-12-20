@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import {Navbar, Nav, NavDropdown, Container} from "react-bootstrap"
+import {Navbar, Nav, NavDropdown, Offcanvas} from "react-bootstrap"
 import { useState } from 'react';
 import cpaccFlashCards from "./utils/cards-api-v1"
 import CardList from './Components/CardList';
@@ -17,7 +17,7 @@ function App() {
     <div className="App ">
       <main>
       <Navbar bg="dark" variant="dark">
-        <Container className='m-auto'>
+        <div className='m-auto'>
             <Nav>
               <Navbar.Brand className='a11y-nav text-white m-2' href="/">A11y Cards</Navbar.Brand>
               <Nav.Link href="https://www.dhs.gov/trusted-tester" className='text-white m-2'>Trusted Trester</Nav.Link>
@@ -42,7 +42,7 @@ function App() {
               </NavDropdown.Item>
             </NavDropdown>
             </Nav>
-        </Container>
+        </div>
 
       </Navbar>
         

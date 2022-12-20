@@ -34,7 +34,7 @@ const ShowCard = ({cpacc, setCpacc}) => {
  }
   return (
     <>
-       <h2>CPACC Practice</h2>
+       <h1>CPACC Practice</h1>
         <div className="main-container bg-dark text-white " style={{ width: '40rem' } }>
             <Card className="sub-container bg-secondary" style={{ width: '35rem' } }>
                 <Card.Title><h2>Question:</h2></Card.Title>
