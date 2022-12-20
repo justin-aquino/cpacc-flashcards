@@ -1,24 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import {Navbar, Nav, NavDropdown, Offcanvas} from "react-bootstrap"
+import {Navbar, Nav, NavDropdown, Container} from "react-bootstrap"
 import { useState } from 'react';
-import cpacc from "./utils/cards-api-v1"
+import cpaccFlashCards from "./utils/cards-api-v1"
 import CardList from './Components/CardList';
 import { Routes, Route } from 'react-router';
 import Home from './Components/Home';
 
 function App() {
 
-  const [cards, setCards] = useState(cpacc)
+  const [cpacc, setCpacc] = useState(cpaccFlashCards)
 
 
-  console.log(cards)
   return (
     <>
     <div className="App ">
       <main>
       <Navbar bg="dark" variant="dark">
-        <div className='m-auto'>
+        <Container className='m-auto'>
             <Nav>
               <Navbar.Brand className='a11y-nav text-white m-2' href="/">A11y Cards</Navbar.Brand>
               <Nav.Link href="https://www.dhs.gov/trusted-tester" className='text-white m-2'>Trusted Trester</Nav.Link>
@@ -43,13 +42,13 @@ function App() {
               </NavDropdown.Item>
             </NavDropdown>
             </Nav>
-        </div>
+        </Container>
 
       </Navbar>
         
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path="/flashcards/cpacc" element={<CardList cards={cards} setCards={setCards} />} />
+          <Route path="/flashcards/cpacc" element={<CardList cpacc={cpacc} setCpacc={setCpacc} />} />
 
         </Routes>
         
