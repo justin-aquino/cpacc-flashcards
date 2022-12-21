@@ -3,7 +3,7 @@ import './App.css';
 import {Navbar, Nav, NavDropdown, Offcanvas} from "react-bootstrap"
 import { useState } from 'react';
 import cpaccFlashCards from "./utils/cards-api-v1"
-import CardList from './Components/CpaccList';
+import CpaccList from './Components/CpaccList';
 import { Routes, Route } from 'react-router';
 import Home from './Components/Home';
 
