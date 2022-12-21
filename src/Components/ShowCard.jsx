@@ -10,7 +10,7 @@ const ShowCard = ({cpacc, setCpacc}) => {
 
   const [showQuestion, setShowQuestion] = useState({
       question: "Click Button to Generate Question",
-      answer: ""
+      answer: "Generate Question First"
   })
   
   
@@ -51,7 +51,6 @@ const ShowCard = ({cpacc, setCpacc}) => {
                     
                     : null
                 }
-                
                 {
                     showToggle ?
                 <Button className="q-btn" variant="danger" onClick={showAnswer}>Hide Answer</Button>
@@ -59,8 +58,11 @@ const ShowCard = ({cpacc, setCpacc}) => {
                 <Button className="q-btn" variant="danger" onClick={showAnswer}>Show Answer</Button>
                 }
                 {
-                    showQuestion.question === "Click Button to Generate Question" ?
+                    showQuestion.question === "Click Button to Generate Question" && showToggle ?(<>
+                    
                     <Button className="q-btn" variant="primary" onClick={randomizer}>Generate Question</Button> 
+                    </>
+                    )
                     :
                     <Button className="q-btn" variant="primary" onClick={randomizer}>Next Question</Button>
                 }

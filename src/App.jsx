@@ -20,7 +20,7 @@ function App() {
         <div className='m-auto'>
             <Nav>
               <Navbar.Brand className='a11y-nav text-white m-2' href="/">A11y Cards</Navbar.Brand>
-              <Nav.Link href="https://www.dhs.gov/trusted-tester" className='text-white m-2'>Trusted Trester</Nav.Link>
+              <Nav.Link href="https://www.dhs.gov/trusted-tester" className='text-white m-2'>Trusted Tester</Nav.Link>
               <Nav.Link href="https://www.w3.org/WAI/WCAG21/quickref/" className='text-white m-2'>WCAG Quick Ref</Nav.Link>
               <NavDropdown    
                 id="collasible-nav-dropdown" 
@@ -31,15 +31,12 @@ function App() {
                         </span>
                       } 
               >       
-              <NavDropdown.Item href="/flashcards/cpacc" >CPACC Cards</NavDropdown.Item>
+              <NavDropdown.Item href="/" >CPACC Cards</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Trusted Tester
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Coming Soon</NavDropdown.Item>
+             
             </NavDropdown>
             </Nav>
         </div>
