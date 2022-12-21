@@ -47,8 +47,8 @@ function App() {
       </Navbar>
         
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route exact path="/flashcards/cpacc" element={<CpaccList cpacc={cpacc} setCpacc={setCpacc} />} />
+          {/* <Route path='/' element={<Home />} /> */}
+          <Route path="/" element={<CpaccList cpacc={cpacc} setCpacc={setCpacc} />} />
 
         </Routes>
         
