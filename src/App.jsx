@@ -48,7 +48,7 @@ function App() {
         
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path="/flashcards/cpacc" element={<CpaccList cpacc={cpacc} setCpacc={setCpacc} />} />
+          <Route exact path="/flashcards/cpacc" element={<CpaccList cpacc={cpacc} setCpacc={setCpacc} />} />
 
         </Routes>
         
