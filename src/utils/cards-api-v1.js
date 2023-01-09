@@ -92,7 +92,60 @@ const cpacc = [
         instructions: "For the following scenarios, determine the appropriate disability category.",
         question: "Can hear sounds but sometimes not sufficiently to understand all speech, especially when there is background noise. This can include people using hearing aids. ",
         answer: ""
-    }
+    },
+    {
+        instructions: "True or False",
+        question: "The 7 Principles of Universal Design is an accessible desgin framework built for the Information Communication Technology space and was developed by the World Wide Web Consortium (W3C).",
+        answer: "False. The 7 Principles of Universal Design were developed at the Center for Universal Design at North Carolina State University by a group of architects, engineers, and environmental design researchers. They are meant to guide the design of environments, products and communications."
+    },
+    
+    {
+        instructions: "",
+        question: "The Perceptible Information principle guides us to 'provide adequate contrast between essential information'. Under the web content accessibility principle of Perceivable, which success criterion is most closely aligned with it?",
+        answer: "Success Criterion 1.4.3 Contrast (Minimum). Both Universal Design and the WCAG seek to provide sufficient contrast between the foreground and background colors of important information such as text."
+    },
+    
+    {
+        instructions: "Determine the correct Universal Design principle in this scenario:",
+        question: "Ambidextrous scissors are an example of which Universal Design principle?",
+        answer: "Principle 2: Flexibility ins Use. Accommodating right- or left-handed access and use is a guideline of Principle 2: Flexibility in Use, as it requires that 'the design accomondates a wide range of individual preferences and abilities."
+    },
+    
+    {
+        instructions: "Determine the correct Universal Design principle in this scenario:",
+        question: "Ikea instructions are an example of which Universal Design principle?",
+        answer: "Principle 3: Simple and Intuitive Use. Using graphical depictions of actions without relying on written text accommodates a wide range of literacy and language skills, which is a guideline of Principle 3: Simple and Intuitive Use."
+    },
+    
+    {
+        instructions: "",
+        question: "",
+        answer: ""
+    },
+    
+    {
+        instructions: "",
+        question: "",
+        answer: ""
+    },
+    
+    {
+        instructions: "",
+        question: "",
+        answer: ""
+    },
+    
+    {
+        instructions: "",
+        question: "",
+        answer: ""
+    },
+    
+    {
+        instructions: "",
+        question: "",
+        answer: ""
+    },
     
 ]
 
