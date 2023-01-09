@@ -118,9 +118,9 @@ const cpacc = [
     },
     
     {
-        instructions: "",
-        question: "",
-        answer: ""
+        instructions: "Determin the correct Universal Design principle in this scenario:",
+        question: "The woman in a wheelchair using an automated ticketing system. The interface is at a reachable height with adequate room for her to navigate into and out of the space.",
+        answer: "Principle 7: Size and Space for Approach and Use. The interface and controls of the automated machine are at a height which 'makes reach to all components comfortable for any seated or standing user' which is a guideline of Principle 7: Size and Space for Approach and Use."
     },
     
     {
