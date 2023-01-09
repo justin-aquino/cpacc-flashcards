@@ -123,29 +123,29 @@ const cpacc = [
         answer: "Principle 7: Size and Space for Approach and Use. The interface and controls of the automated machine are at a height which 'makes reach to all components comfortable for any seated or standing user' which is a guideline of Principle 7: Size and Space for Approach and Use."
     },
     
-    {
-        instructions: "",
-        question: "",
-        answer: ""
-    },
+    // {
+    //     instructions: "",
+    //     question: "",
+    //     answer: ""
+    // },
     
-    {
-        instructions: "",
-        question: "",
-        answer: ""
-    },
+    // {
+    //     instructions: "",
+    //     question: "",
+    //     answer: ""
+    // },
     
-    {
-        instructions: "",
-        question: "",
-        answer: ""
-    },
+    // {
+    //     instructions: "",
+    //     question: "",
+    //     answer: ""
+    // },
     
-    {
-        instructions: "",
-        question: "",
-        answer: ""
-    },
+    // {
+    //     instructions: "",
+    //     question: "",
+    //     answer: ""
+    // },
     
 ]
 
